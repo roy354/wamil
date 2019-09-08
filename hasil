@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="og:title" content="Home">
+    <meta name="og:description" content="Ayam  is committed to providing high quality, authentic Asian products with superior taste and flavour since 1892. ">
+    <meta property="og:image" content=""/>
+    <meta charset="utf-8"/><title>za.gl</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Start earning money for each visitor of your shortened links with za.gl! A service that pays.">
+
+<link href='https://za.gl/webroot/img/zagl-favico@2x.png' type='image/x-icon' rel='icon'/><link href='https://za.gl/webroot/img/zagl-favico@2x.png' type='image/x-icon' rel='shortcut icon'/>
+<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+
+<link rel="stylesheet" href="https://za.gl/vendor/bootstrap/css/bootstrap.min.css?ver=5.3.51_17"/><link rel="stylesheet" href="https://za.gl/vendor/font-awesome/css/font-awesome.min.css?ver=5.3.51_17"/><link rel="stylesheet" href="https://za.gl/vendor/animate.min.css?ver=5.3.51_17"/><link rel="stylesheet" href="https://za.gl/vendor/owl/owl.carousel.min.css?ver=5.3.51_17"/><link rel="stylesheet" href="https://za.gl/vendor/owl/owl.theme.default.css?ver=5.3.51_17"/><link rel="stylesheet" href="https://za.gl/cloud_theme/css/front.css?ver=5.3.51_17"/><link rel="stylesheet" href="https://za.gl/cloud_theme/css/app.css?ver=5.3.51_17"/><link rel="stylesheet" href="https://za.gl/cloud_theme/css/spritesheet.css?ver=5.3.51_17"/>
+<meta name="google-site-verification" content="JavhqICcfIifHTS8v57DX1h54AR1KLSauhxNb3g14oU" />
+<script src="https://za.gl/external/pushmodule/app.js?v=0.03" type="7ad6ebef078de85f564a7ce8-text/javascript"></script>
+<script type="7ad6ebef078de85f564a7ce8-text/javascript">
+
+//Generic functions
+
+function getQueryStringValue (key) {  
+  return decodeURIComponent(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + encodeURIComponent(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));  
+}  
+
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+ setCookie("sls", 0);
+if(getQueryStringValue ("cid") !== ''){
+setCookie("cid", getQueryStringValue ("cid"));
+}
+if(getQueryStringValue ("sid") !== ''){
+setCookie("sid", getQueryStringValue ("sid"));
+}
+</script>
+<style>
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 100000;
+    cursor: pointer;
+}
+
+#text{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    font-size: 35px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+#btn{
+	background-color:#f3f3f3;
+    color:black;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    border: solid 0 0 0;
+}
+</style>
+
+<script type="7ad6ebef078de85f564a7ce8-text/javascript">
+
+function on() {
+    document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+    document.getElementById("overlay").style.display = "none";
+}
+function permission() {
+    var permiss = Notification.permission;
+   Notification.requestPermission((permission)=>{
+      console.log(permiss);
+      if(permission  === 'granted' && permiss !==  'granted'){
+          setCookie("slv", 1);
+        }else if(permission  === 'denied' && permiss !==  'denied'){
+          setCookie("slv", -1);
+        }
+   document.getElementById("overlay").style.display = "none";
+});
+}
+</script>
+
+<div id="overlay">
+  <div id="text">Click <span id="btn" onclick="if (!window.__cfRLUnblockHandlers) return false; permission()" data-cf-modified-7ad6ebef078de85f564a7ce8-="">Allow</span>  to skip ads!</div>
+</div>
+
+<script type="7ad6ebef078de85f564a7ce8-text/javascript">
+setCookie("slv", 0);
+
+if(Notification.permission  === 'default'){
+document.getElementById("overlay").style.display = "block";
+setInterval(function(){permission(); }, 100);
+}
+if(typeof Notification.permission  === 'undefined'){
+document.getElementById("overlay").style.display = "none";
+}
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="7ad6ebef078de85f564a7ce8-text/javascript"></script>
+<meta name="propeller" content="e0f6d4bd743c5f619466e42f89fba3d2">   
+
+
+<script type="7ad6ebef078de85f564a7ce8-text/javascript">
+
+// Would write the value of the QueryString-variable called name to the console  
+console.log(getQueryStringValue("reff")); 
+setCookie("ref", getQueryStringValue("reff"));
+setCookie("clickID", getQueryStringValue("clickID"));
+</script>
+
+<style>
+.winbig {
+    position: fixed;
+    z-index: 10000;
+    top: 79px;
+    text-align: center;
+    width: 100%;
+    background-color: #ffb300;
+    color: #FFFFFF;
+    padding: 10px;
+    margin-top: 81px;
+    border-bottom: solid 2px #0DBAF0;
+    font-size: 22px;
+}
+.winwin {
+position: fixed;
+z-index: 10000;
+top: 0;
+text-align: center;
+width: 100%;
+background-color: #B8DE01;
+color: #FFFFFF;
+padding: 10px;
+margin-top: 81px;
+border-top: solid 20px #0DBAF0;
+border-bottom: solid 2px #0DBAF0;
+font-size: 22px;
+}
+
+.winbig strong {
+display: inline-block ;
+}
+
+.winbig strong b {
+font-size: 120%;
+text-align: inherit;
+}
+
+.winbig strong span {
+font-size: 70%;
+text-align: inherit;
+}
+.winwin strong {
+display: inline-block ;
+}
+
+.winwin strong b {
+font-size: 120%;
+text-align: inherit;
+}
+
+.winwin strong span {
+font-size: 70%;
+text-align: inherit;
+}
+
+@media only screen and (max-width: 767px) {
+    .winbig {
+        position: initial;
+        margin-top: 0px;
+        font-size: 16px;
+    }
+    .winwin {
+        position: initial;
+        margin-top: 71px;
+        font-size: 16px;
+    }
+    .banner-page {
+        margin-top: -80px;
+    }
+}
+</style>
+<!--
+<a href="https://za.gl/pages/contest" target="_blank">
+<div class="winwin">
+<div class="winwin-wrap">
+<b class="txt">WIN</b> &nbsp;
+<strong><b class="nr">200$</b> <span class="nr-label">Prize</span></strong>
+<span class="txt">+</span> 
+<strong><b class="nr">200$</b> <span class="nr-label">Giveaway</span></strong>
+</div>
+</div>
+</a>
+<a href="https://za.gl/pages/big-contest" target="_blank">
+<div class="winbig" style="font-weight: 500;">
+<div class="winbig-wrap">
+    <span>Bring visits from</span> 
+    <strong style="
+    font-size: 1.1em; font-weight: 700; margin: 0 3px; 
+">(USA/UK/UAE/Saudi)</strong> 
+    <span style="
+    font-size: 0.9em;
+">and</span> 
+    <strong style="margin: 0 0 0 3px; 
+    font-size: 1.2em;
+">WIN <b style="font-weight: 900">500$</b></strong>
+</div>
+</div>
+</a>
+ -->
+<script type="7ad6ebef078de85f564a7ce8-text/javascript">
+  if (window.self !== window.top) {
+    window.top.location.href = window.location.href
+  }
+</script>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="banner-page">
+<script src="https://za.gl/external/prizesmodule/js/prize.js?v002" type="7ad6ebef078de85f564a7ce8-text/javascript"></script>
+<!-- Navigation -->
+<nav id="mainNav" class="navbar navbar-default">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+                        <a class="navbar-brand logo-image" href="https://za.gl/"><img src='https://za.gl/webroot/img/zagl-white.svg' alt='za.gl' /></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                                    <li>
+                        <a href="https://za.gl/advertising-rates">Advertising</a>
+                    </li>
+                                <li>
+                    <a href="https://za.gl/payout-rates">Payout Rates</a>
+                </li>
+                            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+                        
+
+<div class="box-main">
+    
+    
+    <h4>Your link is almost ready.</h4>
+
+    <span id="countdown" class="countdown">
+        <span id="timer" class="timer">
+            3        </span><br>Seconds    </span>
+
+            <div class="banner banner-468x60">
+            <div class="banner-inner">
+                <script type="7ad6ebef078de85f564a7ce8-text/javascript">
+var sec = 0;
+window.onclick = function handler() {
+  window.timer = setInterval(window.validator, 1000);
+  console.log('Start');
+};
+window.validator = function (){
+sec = sec + 1;
+if(window.popad && window.popad.closed){
+  clearInterval(window.timer);
+  var crypt = getCookie('zagl_stat_id');
+  fetch('https://za.gl/external/adtimer/index.php?crypt=' + crypt + '&timer=' + sec);
+  console.log('Visitor on AD ' + sec + ' seconds');
+} else if (sec == 20){
+  var crypt = getCookie('zagl_stat_id');
+  fetch('https://za.gl/external/adtimer/index.php?crypt=' + crypt + '&timer=' + sec);
+}
+}
+</script>
+<style>
+#overlay-ad{
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.2);
+    z-index: 1000;
+    cursor: pointer;
+}
+</style>
+
+<div onclick="if (!window.__cfRLUnblockHandlers) return false; closeoverlay();" data-cf-modified-7ad6ebef078de85f564a7ce8-=""><div id="overlay-ad"> </div></div>
+
+
+<script type="7ad6ebef078de85f564a7ce8-text/javascript">
+function setCookie(cname, cvalue, exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  var expires = "expires="+ d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(name){
+    var pattern = RegExp(name + "=.[^;]*")
+    matched = document.cookie.match(pattern)
+    if(matched){
+        var cookie = matched[0].split('=')
+        return cookie[1]
+    }
+    return false
+}
+
+</script>
+
+
+<script type="7ad6ebef078de85f564a7ce8-text/javascript">
+var overlay = getCookie('overlay');
+if(overlay == '' || overlay == 0){
+setCookie('overlay', 1);
+}
+if(overlay == 2){
+document.getElementById("overlay-ad").style.display = "none";
+setCookie('overlay', 0);
+}
+var clicked = 0;
+function closeoverlay(){
+	overlay = getCookie('overlay');
+	if(overlay == 1 && clicked == 1){
+		window.open(window.location, "_blank");
+		document.getElementById("overlay-ad").style.display = "none";
+		setCookie('overlay', 2);
+		window.location = "https://za.gl/external/visitorsfilter/geo/redir.php?zone=popunder&incentive="+getCookie("scr")
+		
+	}
+	clicked++;
+}
+
+document.getElementById("main-url").href = window.location;
+
+var movemouse = 0;
+function redirect(){
+   if(movemouse === 0){
+	window.location = "https://za.gl/external/visitorsfilter/geo/redir.php?zone=redirect&incentive="+getCookie("scr")
+   }
+}
+
+document.onmousemove = function(){
+ movemouse++;
+}
+document.onload =  setInterval(function() {
+      redirect();
+      console.log("Ready"); }
+  ,15000);
+
+</script>            </div>
+        </div>
+    
+    
+            <div class="link-details ">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <img class="link-image" src=""/>
+                    <h4 class="link-title">Home</h4>
+                    <p class="link-description">Ayam  is committed to providing high quality, authentic Asian products with superior taste and flavour since 1892. </p>
+                </div>
+            </div>
+        </div>
+    
+    <div style="margin-bottom: 10px;">
+        <a href="javascript: void(0)" class="btn btn-success btn-lg get-link disabled">
+            Please wait...        </a>
+    </div>
+
+    
+</div>
+
+
+<form method="post" accept-charset="utf-8" id="go-link" class="hidden" action="/links/go"><div style="display:none;"><input type="hidden" name="_method" value="POST"/><input type="hidden" name="_csrfToken" autocomplete="off" value="f7c7699f24daa4ebeccf4a061d7eb5b651b2929aa08b3760c1c50883cf48e9aabba297eddb204d429f8a8fabb26c37c4bd8f0163240b05ce7f332ae6323b4c96"/></div>
+<input type="hidden" name="ad_form_data" value="ZGY2MTc3OWE5MDJkODE0ZmE4Mzc5ODQ1OGMyMTc5YWU4MzhjYTVjYTk5ZDBhOTU0NWJkNDdlNzJhY2VmMTQ4OFqvUWyBRXhjm5Ql4/bx22CmyxPDIkU4CsVpecr536X+YJ3qVq3LbV9fmqjVGmXu2oBtClVmWaWooPNJhje3rPrCd1wOI3IQF41EQUYqikDNArO5yVYHoL5mTFMUUWEmnLWS+lAkRf1bGsOsVfNvO+aw6dDWjkyZ1WQrVPocUjDs6BZbsQkPABCFwKHs82dDsSWWfxoDpicF4fO0JEfAlxbnpU8XDpCflM7WzBoyEUtaHBHG7iag2i9HhlJQOOIjeQ=="/>
+<button id="go-submit" class="hidden" type="submit">Submit</button>
+<div style="display:none;"><input type="hidden" name="_Token[fields]" autocomplete="off" value="831337da24757d86f643c2047ccbcb03ca2b419f%3Aad_form_data"/><input type="hidden" name="_Token[unlocked]" autocomplete="off" value="adcopy_challenge%7Cadcopy_response%7Ccoinhive-captcha-token%7Cg-recaptcha-response"/></div></form>
+    <form method="post" accept-charset="utf-8" target="_blank" id="go-popup" class="hidden" action="/links/popad"><div style="display:none;"><input type="hidden" name="_method" value="POST"/><input type="hidden" name="_csrfToken" autocomplete="off" value="f7c7699f24daa4ebeccf4a061d7eb5b651b2929aa08b3760c1c50883cf48e9aabba297eddb204d429f8a8fabb26c37c4bd8f0163240b05ce7f332ae6323b4c96"/></div>
+    <input type="hidden" name="pop_ad" value="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"/>
+    <div style="display:none;"><input type="hidden" name="_Token[fields]" autocomplete="off" value="71c453f86764db1bd3f7229e4eb737ab7963b440%3Apop_ad"/><input type="hidden" name="_Token[unlocked]" autocomplete="off" value=""/></div></form>
+        </div>
+    </div>
+</div>
+
+<footer>
+    
+    <div class="copyright-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 bottom-menu">
+                    <ul class="list-inline">
+                        <li><a href="https://za.gl/pages/privacy">Privacy Policy</a>
+                        </li>
+                        <li><a href="https://za.gl/pages/terms">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 social-links">
+                    <ul class="list-inline">
+                                                    <li><a href="https://www.facebook.com/zagl-294746587681501/"><i class="fa fa-facebook"></i></a></li>
+                                                                                            </ul>
+                </div>
+                <div class="col-sm-4 copyright">
+                    <div>Copyright &copy; za.gl 2019</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="7ad6ebef078de85f564a7ce8-text/javascript">
+  /* <![CDATA[ */
+  var app_vars = {"base_url":"https:\/\/za.gl\/","language":"en_US","copy":"Copy","copied":"Copied!","user_id":null,"home_shortening_register":"no","enable_captcha":"yes","captcha_type":"recaptcha","reCAPTCHA_site_key":"","invisible_reCAPTCHA_site_key":"","solvemedia_challenge_key":"","coinhive_site_key":"","coinhive_hashes":"1024","captcha_short_anonymous":"0","captcha_shortlink":"yes","captcha_signin":"no","captcha_signup":"yes","captcha_forgot_password":"yes","captcha_contact":"yes","counter_value":"3","counter_start":"DOMContentLoaded","get_link":"Get Link","getting_link":"Getting link...","skip_ad":"Skip Ad","force_disable_adblock":"0","please_disable_adblock":"Please disable Adblock to proceed to the destination page.","cookie_notification_bar":true,"cookie_message":"This website uses cookies to ensure you get the best experience on our website. <a href='https:\/\/za.gl\/pages\/privacy' target='_blank'><b>Learn more<\/b><\/a>","cookie_button":"Got it!"};
+  /* ]]> */
+</script>
+
+<script src="https://za.gl/js/ads.js" type="7ad6ebef078de85f564a7ce8-text/javascript"></script><script src="https://za.gl/vendor/jquery.min.js?ver=5.3.51_17" type="7ad6ebef078de85f564a7ce8-text/javascript"></script><script src="https://za.gl/vendor/bootstrap/js/bootstrap.min.js?ver=5.3.51_17" type="7ad6ebef078de85f564a7ce8-text/javascript"></script><script src="https://za.gl/vendor/owl/owl.carousel.min.js?ver=5.3.51_17" type="7ad6ebef078de85f564a7ce8-text/javascript"></script><script src="https://za.gl/vendor/wow.min.js?ver=5.3.51_17" type="7ad6ebef078de85f564a7ce8-text/javascript"></script><script src="https://za.gl/vendor/clipboard.min.js?ver=5.3.51_17" type="7ad6ebef078de85f564a7ce8-text/javascript"></script><script src="https://za.gl/cloud_theme/js/front.js?ver=5.3.51_17" type="7ad6ebef078de85f564a7ce8-text/javascript"></script><script src="https://za.gl/js/app.js?ver=5.3.51_17" type="7ad6ebef078de85f564a7ce8-text/javascript"></script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadRecaptchaCallback&render=explicit" async defer type="7ad6ebef078de85f564a7ce8-text/javascript"></script>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120643151-1" type="7ad6ebef078de85f564a7ce8-text/javascript"></script>
+<script type="7ad6ebef078de85f564a7ce8-text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120643151-1');
+</script>
+
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/95c75768/cloudflare-static/rocket-loader.min.js" data-cf-settings="7ad6ebef078de85f564a7ce8-|49" defer=""></script></body>
+</html>

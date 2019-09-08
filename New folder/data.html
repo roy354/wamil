@@ -1,0 +1,403 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta name="og:title" content="">
+<meta name="og:description" content="">
+<meta property="og:image" content="" />
+<meta charset="utf-8" /><title>za.gl</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Start earning money for each visitor of your shortened links with za.gl! A service that pays.">
+<link href='https://za.gl/webroot/img/zagl-favico@2x.png' type='image/x-icon' rel='icon' /><link href='https://za.gl/webroot/img/zagl-favico@2x.png' type='image/x-icon' rel='shortcut icon' />
+<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+<link rel="stylesheet" href="https://za.gl/vendor/bootstrap/css/bootstrap.min.css?ver=5.3.51_17" /><link rel="stylesheet" href="https://za.gl/vendor/font-awesome/css/font-awesome.min.css?ver=5.3.51_17" /><link rel="stylesheet" href="https://za.gl/vendor/animate.min.css?ver=5.3.51_17" /><link rel="stylesheet" href="https://za.gl/vendor/owl/owl.carousel.min.css?ver=5.3.51_17" /><link rel="stylesheet" href="https://za.gl/vendor/owl/owl.theme.default.css?ver=5.3.51_17" /><link rel="stylesheet" href="https://za.gl/cloud_theme/css/front.css?ver=5.3.51_17" /><link rel="stylesheet" href="https://za.gl/cloud_theme/css/app.css?ver=5.3.51_17" /><link rel="stylesheet" href="https://za.gl/cloud_theme/css/spritesheet.css?ver=5.3.51_17" />
+<meta name="google-site-verification" content="JavhqICcfIifHTS8v57DX1h54AR1KLSauhxNb3g14oU" />
+<script src="https://za.gl/external/pushmodule/app.js?v=0.03" type="7f5b320ae04d0eef8cb80b49-text/javascript"></script>
+<script type="7f5b320ae04d0eef8cb80b49-text/javascript">
+
+//Generic functions
+
+function getQueryStringValue (key) {  
+  return decodeURIComponent(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + encodeURIComponent(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));  
+}  
+
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+ setCookie("sls", 0);
+if(getQueryStringValue ("cid") !== ''){
+setCookie("cid", getQueryStringValue ("cid"));
+}
+if(getQueryStringValue ("sid") !== ''){
+setCookie("sid", getQueryStringValue ("sid"));
+}
+</script>
+<style>
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 100000;
+    cursor: pointer;
+}
+
+#text{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    font-size: 35px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+#btn{
+	background-color:#f3f3f3;
+    color:black;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    border: solid 0 0 0;
+}
+</style>
+<script type="7f5b320ae04d0eef8cb80b49-text/javascript">
+
+function on() {
+    document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+    document.getElementById("overlay").style.display = "none";
+}
+function permission() {
+    var permiss = Notification.permission;
+   Notification.requestPermission((permission)=>{
+      console.log(permiss);
+      if(permission  === 'granted' && permiss !==  'granted'){
+          setCookie("slv", 1);
+        }else if(permission  === 'denied' && permiss !==  'denied'){
+          setCookie("slv", -1);
+        }
+   document.getElementById("overlay").style.display = "none";
+});
+}
+</script>
+<div id="overlay">
+<div id="text">Click <span id="btn" onclick="if (!window.__cfRLUnblockHandlers) return false; permission()" data-cf-modified-7f5b320ae04d0eef8cb80b49-="">Allow</span> to skip ads!</div>
+</div>
+<script type="7f5b320ae04d0eef8cb80b49-text/javascript">
+setCookie("slv", 0);
+
+if(Notification.permission  === 'default'){
+document.getElementById("overlay").style.display = "block";
+setInterval(function(){permission(); }, 100);
+}
+if(typeof Notification.permission  === 'undefined'){
+document.getElementById("overlay").style.display = "none";
+}
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="7f5b320ae04d0eef8cb80b49-text/javascript"></script>
+<meta name="propeller" content="e0f6d4bd743c5f619466e42f89fba3d2">
+<script type="7f5b320ae04d0eef8cb80b49-text/javascript">
+
+// Would write the value of the QueryString-variable called name to the console  
+console.log(getQueryStringValue("reff")); 
+setCookie("ref", getQueryStringValue("reff"));
+setCookie("clickID", getQueryStringValue("clickID"));
+</script>
+<style>
+.winbig {
+    position: fixed;
+    z-index: 10000;
+    top: 79px;
+    text-align: center;
+    width: 100%;
+    background-color: #ffb300;
+    color: #FFFFFF;
+    padding: 10px;
+    margin-top: 81px;
+    border-bottom: solid 2px #0DBAF0;
+    font-size: 22px;
+}
+.winwin {
+position: fixed;
+z-index: 10000;
+top: 0;
+text-align: center;
+width: 100%;
+background-color: #B8DE01;
+color: #FFFFFF;
+padding: 10px;
+margin-top: 81px;
+border-top: solid 20px #0DBAF0;
+border-bottom: solid 2px #0DBAF0;
+font-size: 22px;
+}
+
+.winbig strong {
+display: inline-block ;
+}
+
+.winbig strong b {
+font-size: 120%;
+text-align: inherit;
+}
+
+.winbig strong span {
+font-size: 70%;
+text-align: inherit;
+}
+.winwin strong {
+display: inline-block ;
+}
+
+.winwin strong b {
+font-size: 120%;
+text-align: inherit;
+}
+
+.winwin strong span {
+font-size: 70%;
+text-align: inherit;
+}
+
+@media only screen and (max-width: 767px) {
+    .winbig {
+        position: initial;
+        margin-top: 0px;
+        font-size: 16px;
+    }
+    .winwin {
+        position: initial;
+        margin-top: 71px;
+        font-size: 16px;
+    }
+    .banner-page {
+        margin-top: -80px;
+    }
+}
+</style>
+
+<script type="7f5b320ae04d0eef8cb80b49-text/javascript">
+  if (window.self !== window.top) {
+    window.top.location.href = window.location.href
+  }
+</script>
+
+
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="banner-page">
+<script src="https://za.gl/external/prizesmodule/js/prize.js?v002" type="7f5b320ae04d0eef8cb80b49-text/javascript"></script>
+
+<nav id="mainNav" class="navbar navbar-default">
+<div class="container">
+
+<div class="navbar-header page-scroll">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand logo-image" href="https://za.gl/"><img src='https://za.gl/webroot/img/zagl-white.svg' alt='za.gl' /></a>
+</div>
+
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav navbar-right">
+<li>
+<a href="https://za.gl/advertising-rates">Advertising</a>
+</li>
+<li>
+<a href="https://za.gl/payout-rates">Payout Rates</a>
+</li>
+</ul>
+</div>
+
+</div>
+
+</nav>
+<div class="container">
+<div class="row">
+<div class="col-md-10 col-md-offset-1">
+<div class="box-main">
+<h4>Your link is almost ready.</h4>
+<span id="countdown" class="countdown">
+<span id="timer" class="timer">
+3 </span><br>Seconds </span>
+<div class="banner banner-468x60">
+<div class="banner-inner">
+<script type="7f5b320ae04d0eef8cb80b49-text/javascript">
+var sec = 0;
+window.onclick = function handler() {
+  window.timer = setInterval(window.validator, 1000);
+  console.log('Start');
+};
+window.validator = function (){
+sec = sec + 1;
+if(window.popad && window.popad.closed){
+  clearInterval(window.timer);
+  var crypt = getCookie('zagl_stat_id');
+  fetch('https://za.gl/external/adtimer/index.php?crypt=' + crypt + '&timer=' + sec);
+  console.log('Visitor on AD ' + sec + ' seconds');
+} else if (sec % 20 == 0){
+  var crypt = getCookie('zagl_stat_id');
+  fetch('https://za.gl/external/adtimer/index.php?crypt=' + crypt + '&timer=' + sec);
+}
+}
+</script>
+<style>
+#overlay-ad{
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.2);
+    z-index: 1000;
+    cursor: pointer;
+}
+</style>
+<div onclick="if (!window.__cfRLUnblockHandlers) return false; closeoverlay();" data-cf-modified-7f5b320ae04d0eef8cb80b49-=""><div id="overlay-ad"> </div></div>
+<script type="7f5b320ae04d0eef8cb80b49-text/javascript">
+function setCookie(cname, cvalue, exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  var expires = "expires="+ d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(name){
+    var pattern = RegExp(name + "=.[^;]*")
+    matched = document.cookie.match(pattern)
+    if(matched){
+        var cookie = matched[0].split('=')
+        return cookie[1]
+    }
+    return false
+}
+
+</script>
+<script type="7f5b320ae04d0eef8cb80b49-text/javascript">
+var overlay = getCookie('overlay');
+if(overlay == '' || overlay == 0){
+setCookie('overlay', 1);
+}
+if(overlay == 2){
+document.getElementById("overlay-ad").style.display = "none";
+setCookie('overlay', 0);
+}
+var clicked = 0;
+function closeoverlay(){
+	overlay = getCookie('overlay');
+	if(overlay == 1 && clicked == 1){
+		window.open(window.location, "_blank");
+		document.getElementById("overlay-ad").style.display = "none";
+		setCookie('overlay', 2);
+		window.location = "https://za.gl/external/visitorsfilter/geo/redir.php?zone=popunder&incentive="+getCookie("scr")
+		
+	}
+	clicked++;
+}
+
+document.getElementById("main-url").href = window.location;
+
+var movemouse = 0;
+function redirect(){
+   if(movemouse === 0){
+	window.location = "https://za.gl/external/visitorsfilter/geo/redir.php?zone=redirect&incentive="+getCookie("scr")
+   }
+}
+
+document.onmousemove = function(){
+ movemouse++;
+}
+document.onload =  setInterval(function() {
+      redirect();
+      console.log("Ready"); }
+  ,15000);
+
+</script> </div>
+</div>
+<div class="link-details hidden">
+<div class="panel panel-default">
+<div class="panel-body">
+<img class="link-image" src="" />
+<h4 class="link-title"></h4>
+<p class="link-description"></p>
+</div>
+</div>
+</div>
+<div style="margin-bottom: 10px;">
+<a href="javascript: void(0)" class="btn btn-success btn-lg get-link disabled">
+Please wait... </a>
+</div>
+</div>
+<form method="post" accept-charset="utf-8" id="go-link" class="hidden" action="/links/go"><div style="display:none;"><input type="hidden" name="_method" value="POST" /><input type="hidden" name="_csrfToken" autocomplete="off" value="fd01016a188c52646a82eb433bceed80f4e4aaf15e08463b25808ca8d58ea7493d412203285c45a5ca6c48cba59bd7f3dd78d34a96c6fc9a4ba6a25d26c5d8b6" /></div>
+<input type="hidden" name="ad_form_data" value="OThlNWQ4NGQ0Mjk2ZTY0NTY3OWU3YmRhZWQ2ZmJmNDhjZjA1MDg1M2ZhM2ZjNzZkODg5NzNiMmU5OTRiMWE0NiG5O3zR6IDrbdwCiv1NMSsTvWoJ480ivrjeaztsaUge1AtlCOsFhQgMbG/KR3CYT+WtmfIYYGEqwfaQ36gvqR3xf/SoSG6jMBhKfTw5u5c1fClkH/nHnmJLGmGu28lk0AhlNPmqcwEOijNADjlFyo/EpoOxlrGIDRKfpkK2VMfZ846Z9YmaMj/mhFhTY+MG9nFJz4m3inzHc1fV5D+dVS2ZsShd/pvpIkJYXzY65vUA" />
+<button id="go-submit" class="hidden" type="submit">Submit</button>
+<div style="display:none;"><input type="hidden" name="_Token[fields]" autocomplete="off" value="9faf4f41b79b45436249d5a2d307a07f693cbc2b%3Aad_form_data" /><input type="hidden" name="_Token[unlocked]" autocomplete="off" value="adcopy_challenge%7Cadcopy_response%7Ccoinhive-captcha-token%7Cg-recaptcha-response" /></div></form>
+<form method="post" accept-charset="utf-8" target="_blank" id="go-popup" class="hidden" action="/links/popad"><div style="display:none;"><input type="hidden" name="_method" value="POST" /><input type="hidden" name="_csrfToken" autocomplete="off" value="fd01016a188c52646a82eb433bceed80f4e4aaf15e08463b25808ca8d58ea7493d412203285c45a5ca6c48cba59bd7f3dd78d34a96c6fc9a4ba6a25d26c5d8b6" /></div>
+<input type="hidden" name="pop_ad" value="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" />
+<div style="display:none;"><input type="hidden" name="_Token[fields]" autocomplete="off" value="2c7e81957642fbe4aab6175356132e0852a31c2a%3Apop_ad" /><input type="hidden" name="_Token[unlocked]" autocomplete="off" value="" /></div></form>
+</div>
+</div>
+</div>
+<footer>
+<div class="copyright-container">
+<div class="container">
+<div class="row">
+<div class="col-sm-4 bottom-menu">
+<ul class="list-inline">
+<li><a href="https://za.gl/pages/privacy">Privacy Policy</a>
+</li>
+<li><a href="https://za.gl/pages/terms">Terms of Use</a>
+</li>
+</ul>
+</div>
+<div class="col-sm-4 social-links">
+<ul class="list-inline">
+<li><a href="https://www.facebook.com/zagl-294746587681501/"><i class="fa fa-facebook"></i></a></li>
+</ul>
+</div>
+<div class="col-sm-4 copyright">
+<div>Copyright &copy; za.gl 2019</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script type="7f5b320ae04d0eef8cb80b49-text/javascript">
+  /* <![CDATA[ */
+  var app_vars = {"base_url":"https:\/\/za.gl\/","language":"en_US","copy":"Copy","copied":"Copied!","user_id":null,"home_shortening_register":"no","enable_captcha":"yes","captcha_type":"recaptcha","reCAPTCHA_site_key":"","invisible_reCAPTCHA_site_key":"","solvemedia_challenge_key":"","coinhive_site_key":"","coinhive_hashes":"1024","captcha_short_anonymous":"0","captcha_shortlink":"yes","captcha_signin":"no","captcha_signup":"yes","captcha_forgot_password":"yes","captcha_contact":"yes","counter_value":"3","counter_start":"DOMContentLoaded","get_link":"Get Link","getting_link":"Getting link...","skip_ad":"Skip Ad","force_disable_adblock":"0","please_disable_adblock":"Please disable Adblock to proceed to the destination page.","cookie_notification_bar":true,"cookie_message":"This website uses cookies to ensure you get the best experience on our website. <a href='https:\/\/za.gl\/pages\/privacy' target='_blank'><b>Learn more<\/b><\/a>","cookie_button":"Got it!"};
+  /* ]]> */
+</script>
+<script src="https://za.gl/js/ads.js" type="7f5b320ae04d0eef8cb80b49-text/javascript"></script><script src="https://za.gl/vendor/jquery.min.js?ver=5.3.51_17" type="7f5b320ae04d0eef8cb80b49-text/javascript"></script><script src="https://za.gl/vendor/bootstrap/js/bootstrap.min.js?ver=5.3.51_17" type="7f5b320ae04d0eef8cb80b49-text/javascript"></script><script src="https://za.gl/vendor/owl/owl.carousel.min.js?ver=5.3.51_17" type="7f5b320ae04d0eef8cb80b49-text/javascript"></script><script src="https://za.gl/vendor/wow.min.js?ver=5.3.51_17" type="7f5b320ae04d0eef8cb80b49-text/javascript"></script><script src="https://za.gl/vendor/clipboard.min.js?ver=5.3.51_17" type="7f5b320ae04d0eef8cb80b49-text/javascript"></script><script src="https://za.gl/cloud_theme/js/front.js?ver=5.3.51_17" type="7f5b320ae04d0eef8cb80b49-text/javascript"></script><script src="https://za.gl/js/app.js?ver=5.3.51_17" type="7f5b320ae04d0eef8cb80b49-text/javascript"></script>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadRecaptchaCallback&render=explicit" async defer type="7f5b320ae04d0eef8cb80b49-text/javascript"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120643151-1" type="7f5b320ae04d0eef8cb80b49-text/javascript"></script>
+<script type="7f5b320ae04d0eef8cb80b49-text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120643151-1');
+</script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/95c75768/cloudflare-static/rocket-loader.min.js" data-cf-settings="7f5b320ae04d0eef8cb80b49-|49" defer=""></script></body>
+</html>
